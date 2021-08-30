@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id = "address" class = "com.customeraddress.Address">
+   
+ <!-- Setting Injection
+ 	  <property name = "street" value = "2nd Street"/>
+      <property name = "city" value = "Hyderabad"/>
+      <property name = "state" value = "Telangana"/>
+      <property name = "zip" value = "500012"/>
+      <property name = "country" value = "India"/> 
+ -->
+      
+      <constructor-arg value="2nd Street"></constructor-arg>
+      <constructor-arg value="Hyderabad"></constructor-arg>
+      <constructor-arg value="Telangana"></constructor-arg>
+      <constructor-arg value="500012" type="int"></constructor-arg>
+      <constructor-arg value="India"></constructor-arg>
+
+   </bean>
+   <bean id="obj" class = "com.customeraddress.Customer">
+   
+  <!-- Setting Injection
+   	  <property name = "customerId" value = "101"/>
+   	  <property name = "customerName" value = "Sowmya"/>
+   	  <property name = "customerContact" value = "9480076955"/>
+   	  <property name = "customerAddress" ref = "address"/> 
+  -->
+   	  
+   	  <constructor-arg value="101" type="int"></constructor-arg>
+   	  <constructor-arg value="Sowmya"></constructor-arg>
+   	  <constructor-arg value="9480076955" type="long"></constructor-arg>
+   	  <constructor-arg>
+   	  <ref bean="address"/>
+   	  </constructor-arg>
+   	  
+   </bean>
+
+</beans>
