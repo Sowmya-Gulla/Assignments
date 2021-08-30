@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id = "question" class = "com.spring_collections.Question">
+   <property name="questionId" value="1"></property>
+   <property name="question" value="what is spring core?"></property>
+   <property name="ansList">
+	   <list>
+	   <value>Springcore is a framework </value>
+	   <value>Used for building applications</value>
+	   </list>
+   </property>
+   <property name="ansSet">
+	   <set>
+	   <value>Springcore is a framework </value>
+	   <value>Used for building applications</value>
+	   </set>
+   
+   </property>
+   <property name="ansMap">
+   <map>
+   <entry key="1" value ="Springcore is a framework"/>
+   <entry key="2" value ="Used for building applications"/>
+   </map>
+   </property>
+   </bean>
+  
+
+
+</beans>
