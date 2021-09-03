@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="A1-20.js"></script>
+
+    </head>
+    <body>
+        <div id="msg"></div>
+        <form name="myForm" onsubmit="return validate()" action="">
+            <label>Name:</label><input type="text" id="name"><br>
+            <label>Email:</label><input type="email" id="email"><br>
+            <label><strong>Toppings:</strong></label><br>
+            <label>Extra Cheese:</label>
+        
+            <input value="Extra Cheese:" type="checkbox" name="check">
+            <label>Peppernol:</label>
+            <input type="checkbox" value="Peppernol:" name="check">
+            <label>Olives:</label>
+            <input type="checkbox" value="Olives:" name="check">
+            <label>Pepper:</label>
+            <input type="checkbox" value="Pepper:" name="check">
+            <label>Bacon:</label>
+            <input type="checkbox" value="Bacon:" name="check">
+            <label>Tomatoes:</label>
+            <input type="checkbox" value="Tomatoes:" name="check">
+            <label>Mushrooms:</label>
+            <input type="checkbox" value="Mushrooms:" name="check"><br>
+    
+            <label><strong>How do you want to get your pizza!</strong></label>
+    
+            <label for="delivery">Delivery:</label>
+            <input type="radio" id="delivery" name="order" value="Delivery">
+            <label for="pickup">Pickup:</label>
+            <input type="radio" id="pickup" name="order" value="Pickup"><br>
+    
+            <label><strong>Tip?</strong></label>
+            <select>
+                <option>15%</option>
+                <option>20%</option>
+                <option>25%</option>
+            </select><br><hr>
+            <label>Address</label><br>
+            <textarea id="address">
+
+            </textarea><br>
+            <input type="submit" value="Submit" >
+            <input type="reset" value="Reset">
+            <input type="button" value="Show Summary"  id="summary" disabled onclick="create()">
+
+        </form>
+        
+      
+
+    </body>
+</html>
