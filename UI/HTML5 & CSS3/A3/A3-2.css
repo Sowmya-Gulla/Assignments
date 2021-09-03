@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    background-color:wheat;
+    }
+fieldset{
+    background-color:thistle;
+    border: 5px dotted green ; 
+}
+h1{
+    color: red;
+   
+}
